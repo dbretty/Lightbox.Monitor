@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Monitor": {
+      "commandName": "Project",
+      "commandLineArgs": "http://1.2.3.4/uriparam?1 https://1.2.3.4/uri&and?1"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>images\Lightbox.ico</ApplicationIcon>
+    <Title>Mightbox Monitor</Title>
+    <Authors>Dave Brett</Authors>
+    <Company>bretty.me.uk</Company>
+    <Description>Simple Lightbox monitoring tool to send an Api POST based on the usage of your webcam.</Description>
+    <Copyright>Copyright (C) 2024 - bretty.me.uk</Copyright>
+    <PackageProjectUrl>https://bretty.me.uk/projects/Lightbox-Monitor</PackageProjectUrl>
+    <PackageIcon>Lightbox.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\Lightbox.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="images\Lightbox.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
